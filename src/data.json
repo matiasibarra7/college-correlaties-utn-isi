@@ -1,0 +1,272 @@
+[
+{
+  "id" : 1,
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Análisis Matemático I",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 2,
+      "name": "Álgebra y Geometría Analítica",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 3,
+      "name": "Matemática Discreta",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 4,
+      "name": "Sistemas y Organizaciones (Int)",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 5,
+      "name": "Algoritmos y Estructuras de Datos",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 6,
+      "name": "Arquitectura de Computadoras",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 7,
+      "name": "Física I",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 8,
+      "name": "Inglés I",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    }
+  ]
+},
+{
+  "id" : 2,
+  "subjects": [
+    {
+      "id": 9,
+      "name": "Química",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 10,
+      "name": "Análisis Matemático II",
+      "correlatives_course": [1,2],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [1,2]
+    },
+    {
+      "id": 11,
+      "name": "Física II",
+      "correlatives_course": [1,7],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [1,7]
+    },
+    {
+      "id": 12,
+      "name": "Análisis de Sistemas (Int)",
+      "correlatives_course": [4,5],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [4,5]
+    },
+    {
+      "id": 13,
+      "name": "Sintáxis y Semántica de los Lenguajes",
+      "correlatives_course": [3,5],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [3,5]
+    },
+    {
+      "id": 14,
+      "name": "Paradigmas de Programación",
+      "correlatives_course": [3,5],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [3,5]
+    },
+    {
+      "id": 15,
+      "name": "Sistemas Operativos",
+      "correlatives_course": [3,5,6],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [3,5,6]
+    },
+    {
+      "id": 16,
+      "name": "Sistemas de Representación",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    }
+  ]
+},
+{
+  "id" : 3,
+  "subjects": [
+    {
+      "id": 17,
+      "name": "Probabilidades y Estadísticas",
+      "correlatives_course": [1,2],
+      "correlatives_course_apro": [],
+      "correlatives_exam": [1,2]
+    },
+    {
+      "id": 18,
+      "name": "Diseño de Sistemas (Int)",
+      "correlatives_course": [12,14],
+      "correlatives_course_apro": [3,4,5],
+      "correlatives_exam": [12,14]
+    },
+    {
+      "id": 19,
+      "name": "Comunicaciones",
+      "correlatives_course": [6,10,11],
+      "correlatives_course_apro": [1,2,7],
+      "correlatives_exam": [6,10,11]
+    },
+    {
+      "id": 20,
+      "name": "Matemática Superior",
+      "correlatives_course": [10],
+      "correlatives_course_apro": [1,2],
+      "correlatives_exam": [10]
+    },
+    {
+      "id": 21,
+      "name": "Gestión de Datos",
+      "correlatives_course": [12,13,14],
+      "correlatives_course_apro": [3,4,5],
+      "correlatives_exam": [12,13,14]
+    },
+    {
+      "id": 22,
+      "name": "Ingeniería y Sociedad",
+      "correlatives_course": [],
+      "correlatives_course_apro": [],
+      "correlatives_exam": []
+    },
+    {
+      "id": 23,
+      "name": "Economía",
+      "correlatives_course": [12],
+      "correlatives_course_apro": [4,5],
+      "correlatives_exam": [12]
+    },
+    {
+      "id": 24,
+      "name": "Inglés II",
+      "correlatives_course": [],
+      "correlatives_course_apro": [8],
+      "correlatives_exam": []
+    } 
+  ]
+},
+{
+  "id" : 4,
+  "subjects": [ 
+    {
+      "id": 25,
+      "name": "Redes",
+      "correlatives_course": [15,19],
+      "correlatives_course_apro": [3,5,6,10,11],
+      "correlatives_exam": [15,19]
+    },
+    {
+      "id": 26,
+      "name": "Administración de Recursos (Int)",
+      "correlatives_course": [15,18,23],
+      "correlatives_course_apro": [6,8,12,14],
+      "correlatives_exam": [15,18,23]
+    },
+    {
+      "id": 27,
+      "name": "Investigación Operativa",
+      "correlatives_course": [17,20],
+      "correlatives_course_apro": [10],
+      "correlatives_exam": [17,20]
+    },
+    {
+      "id": 28,
+      "name": "Simulación",
+      "correlatives_course": [17,20],
+      "correlatives_course_apro": [10],
+      "correlatives_exam": [17,20]
+    },
+    {
+      "id": 29,
+      "name": "Ingeniería de Software",
+      "correlatives_course": [17,18,21],
+      "correlatives_course_apro": [12,13,14],
+      "correlatives_exam": [17,18,21]
+    },
+    {
+      "id": 30,
+      "name": "Teoría de Control",
+      "correlatives_course": [9,20],
+      "correlatives_course_apro": [10,11],
+      "correlatives_exam": [9,20]
+    },
+    {
+      "id": 31,
+      "name": "Legislación",
+      "correlatives_course": [12,22],
+      "correlatives_course_apro": [4,5],
+      "correlatives_exam": [12,22]
+    }
+  ]
+},
+{
+  "id" : 5,
+  "subjects": [
+    {
+      "id": 32,
+      "name": "Proyecto Final (Int)",
+      "correlatives_course": [25,26,29,31],
+      "correlatives_course_apro": [15,16,17,18,19,21,22,23,24],
+      "correlatives_exam": ["all"]
+    },
+    {
+      "id": 33,
+      "name": "Inteligencia Artificial",
+      "correlatives_course": [27,28],
+      "correlatives_course_apro": [17,18,20],
+      "correlatives_exam": [27,28]
+    },
+    {
+      "id": 34,
+      "name": "Administración Gerencial",
+      "correlatives_course": [26,27],
+      "correlatives_course_apro": [15,17,18,20,23],
+      "correlatives_exam": [26,27]
+    },
+    {
+      "id": 35,
+      "name": "Sistemas de Gestión",
+      "correlatives_course": [26,27,28],
+      "correlatives_course_apro": [15,17,18,20,23],
+      "correlatives_exam": [26,27,28]
+    }  
+  ]
+}
+]

@@ -1,0 +1,25 @@
+.subject-line {
+  display: grid;
+  grid-template-columns: 5% 27% 9% 9% 15% 15% 20%;
+  place-content: center;
+  padding: 0.5rem 0;
+  border: 1px solid black;
+}
+
+.subject-line.reg {
+  background-color: lightblue;
+}
+
+.subject-line.apr {
+  background-color: lightgreen;
+}
+
+
+.requirement {
+  display: inline-block;
+  padding: 0 1px;
+  margin: 0 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  min-width: 1rem;
+}
