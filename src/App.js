@@ -1,6 +1,8 @@
 import mati from './mati.png';
 import './App.css';
 import Year from './components/Year'
+import data from "./data/data.json";
+
 
 function App() {
 
@@ -31,7 +33,7 @@ function App() {
         </figure>
       </header>
 
-      <body>
+      <main>
         {/* Cabecera */}
         <div style={{ maxWidth: "1280px", margin: "0 auto"}}>
           <div className="subject-line">
@@ -46,9 +48,10 @@ function App() {
         </div>
 
         {years.map( year => {
-          return < Year id={year.id} key={"year_" + year.id} />
+          /* console.log(data) */
+          return < Year id={year.id} key={"year_" + year.id} infoByYear={data} />
         })}
-      </body>
+      </main>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 .subject-line {
   display: grid;
   grid-template-columns: 5% 27% 9% 9% 15% 15% 20%;
-  place-content: center;
+  place-items: center;
   padding: 0.5rem 0;
   border: 1px solid black;
 }
@@ -18,8 +18,9 @@
 .requirement {
   display: inline-block;
   padding: 0 1px;
-  margin: 0 2px;
+  margin: 2px;
   border: 1px solid black;
   border-radius: 4px;
   min-width: 1rem;
+  user-select: none;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import Subject from "./Subject"
-import data from "../data.json";
 
 
 function Year(props) {
@@ -63,7 +62,7 @@ function Year(props) {
       </div>
 
       {
-        data[props.id - 1].subjects.map(subject => {
+        props.infoByYear[props.id - 1].subjects.map(subject => {
           return < Subject 
             key={"subject_" + subject.id} 
             name={subject.name} 

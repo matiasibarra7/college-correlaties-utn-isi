@@ -1,5 +1,6 @@
 import React from "react";
 import "./Subject.css"
+import allSubjects from "../data/allSubjects.json";
 
 
 function Subject(props) {
@@ -47,8 +48,8 @@ function Subject(props) {
           <div>{props.correlatives_course.length?
            <>
             {
-              props.correlatives_course.map(el => {
-                return <span className="requirement">{el}</span>
+              props.correlatives_course.map((el, i) => {
+                return <span key={`req_reg_span_${i}`} className="requirement" title={allSubjects[el - 1]}>{el}</span>
               })
             }
            </> : 
@@ -56,8 +57,8 @@ function Subject(props) {
            <div>{props.correlatives_course_apro.length?
            <>
             {
-              props.correlatives_course_apro.map(el => {
-                return <span className="requirement">{el}</span>
+              props.correlatives_course_apro.map((el, i) => {
+                return <span key={`req_apro_span_${i}`} className="requirement" title={allSubjects[el - 1]}>{el}</span>
               })
             }
            </> : 
@@ -65,12 +66,14 @@ function Subject(props) {
            <div>{props.correlatives_exam.length?
            <>
             {
-              props.correlatives_exam.map(el => {
-                return <span className="requirement">{el}</span>
+              props.correlatives_exam.map((el, i) => {
+                return <span key={`req_corr_span_${i}`} className="requirement" title={allSubjects[el - 1]}>{el}</span>
               })
             }
            </> : 
            "No tiene"}</div>
+           {/* {console.log(`${props.id} ${props.name}`)}
+           {console.log(`Del array ${allSubjects[props.id - 1]}`)} */}
         </div>
       }
     </>
