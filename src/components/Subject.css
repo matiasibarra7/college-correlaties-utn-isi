@@ -23,4 +23,9 @@
   border-radius: 4px;
   min-width: 1rem;
   user-select: none;
+  background-color: white;
+}
+
+.requirement.compliment {
+  background-color: mediumspringgreen;
 }

@@ -1,38 +1,96 @@
 import React from "react";
 import "./Subject.css"
 import allSubjects from "../data/allSubjects.json";
+import controller from "../controllers/controllerSubjects"
 
 
 function Subject(props) {
+
   function setLineRegular() {
     const checkboxReg = document.querySelector("#reg_check_" + props.id)
+    const boxes_reg = document.querySelectorAll(".reg_" + props.id)
+    
+    const boxes_apro = document.querySelectorAll(".apr_" + props.id)
     const checkboxApr = document.querySelector("#apr_check_" + props.id)
-
+    
     const lineParent = checkboxReg.parentNode.parentNode
-
+    
     if (checkboxReg.checked) {
-      lineParent.classList.add("reg")
-    }
-    else {
-      checkboxApr.checked = false
-      lineParent.classList.remove("reg", "apr")
+      controller.regularOn(boxes_reg, checkboxReg, lineParent)
+
+      //done ?
+      /* if (boxes_reg) {
+        boxes_reg.forEach(el => {
+          el.classList.add("compliment")
+        })
+      }
+
+      lineParent.classList.add("reg") */
+    } else {
+      controller.regularOff(boxes_reg, checkboxReg, lineParent)
+      //done ?
+      /*lineParent.classList.remove("reg", "apr")
+      
+      if (boxes_reg) {
+        boxes_reg.forEach(el => {
+          el.classList.remove("compliment")
+        }
+        )} */
+        
+      controller.approveOff(boxes_apro, checkboxApr, lineParent)
+        /* if (boxes_apro) {
+          boxes_apro.forEach(el => {
+            el.classList.remove("compliment")
+          })
+        } */
+        // checkboxApr.checked = false
+
       document.querySelector("#reg_all_year_" + props.year).checked = false
     }
   }
 
   function setLineApprove() {
     const checkboxReg = document.querySelector("#reg_check_" + props.id)
+    const boxes_reg = document.querySelectorAll(".reg_" + props.id)
+    
     const checkboxApr = document.querySelector("#apr_check_" + props.id)
+    const boxes_apro = document.querySelectorAll(".apr_" + props.id)
 
     const lineParent = checkboxReg.parentNode.parentNode
-
+    
+    // controller.probar("el")
     if (checkboxApr.checked) {
-      lineParent.classList.add("reg", "apr")
-      checkboxReg.checked = true
+      controller.regularOn(boxes_reg, checkboxReg, lineParent)
+
+      //done ?
+     /*  if (boxes_reg) {
+        boxes_reg.forEach(el => {
+          el.classList.add("compliment")
+        })
+      } */
+      //checkboxReg.checked = true
+
+      controller.approveOn(boxes_apro, checkboxApr, lineParent)
+      /* if (boxes_apro) {
+        boxes_apro.forEach(el => {
+          el.classList.add("compliment")
+        })
+      }
+      lineParent.classList.add("reg") */
+      
     }
     else {
-      checkboxApr.checked = false
+      controller.approveOff(boxes_apro, checkboxApr, lineParent)
+      //done ?
+      /* checkboxApr.checked = false
       lineParent.classList.remove("apr")
+
+      if (boxes_apro) {
+        boxes_apro.forEach(el => {
+          el.classList.remove("compliment")
+        })
+      } */
+
       document.querySelector("#apr_all_year_" + props.year).checked = false
     }
   }
@@ -49,7 +107,7 @@ function Subject(props) {
            <>
             {
               props.correlatives_course.map((el, i) => {
-                return <span key={`req_reg_span_${i}`} className="requirement" title={allSubjects[el - 1]}>{el}</span>
+                return <span key={`req_reg_span_${i}`} className={`requirement ${"reg_" + el}`} title={allSubjects[el - 1]}>{el}</span>
               })
             }
            </> : 
@@ -58,7 +116,7 @@ function Subject(props) {
            <>
             {
               props.correlatives_course_apro.map((el, i) => {
-                return <span key={`req_apro_span_${i}`} className="requirement" title={allSubjects[el - 1]}>{el}</span>
+                return <span key={`req_apro_span_${i}`} className={`requirement ${"apr_" + el}`} title={allSubjects[el - 1]}>{el}</span>
               })
             }
            </> : 
@@ -67,7 +125,7 @@ function Subject(props) {
            <>
             {
               props.correlatives_exam.map((el, i) => {
-                return <span key={`req_corr_span_${i}`} className="requirement" title={allSubjects[el - 1]}>{el}</span>
+                return <span key={`req_corr_span_${i}`} className={`requirement ${"apr_" + el}`} title={allSubjects[el - 1]}>{el}</span>
               })
             }
            </> : 
