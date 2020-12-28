@@ -18,32 +18,10 @@ function Subject(props) {
     if (checkboxReg.checked) {
       controller.regularOn(boxes_reg, checkboxReg, lineParent)
 
-      //done ?
-      /* if (boxes_reg) {
-        boxes_reg.forEach(el => {
-          el.classList.add("compliment")
-        })
-      }
-
-      lineParent.classList.add("reg") */
     } else {
       controller.regularOff(boxes_reg, checkboxReg, lineParent)
-      //done ?
-      /*lineParent.classList.remove("reg", "apr")
-      
-      if (boxes_reg) {
-        boxes_reg.forEach(el => {
-          el.classList.remove("compliment")
-        }
-        )} */
         
       controller.approveOff(boxes_apro, checkboxApr, lineParent)
-        /* if (boxes_apro) {
-          boxes_apro.forEach(el => {
-            el.classList.remove("compliment")
-          })
-        } */
-        // checkboxApr.checked = false
 
       document.querySelector("#reg_all_year_" + props.year).checked = false
     }
@@ -58,38 +36,14 @@ function Subject(props) {
 
     const lineParent = checkboxReg.parentNode.parentNode
     
-    // controller.probar("el")
     if (checkboxApr.checked) {
+
       controller.regularOn(boxes_reg, checkboxReg, lineParent)
 
-      //done ?
-     /*  if (boxes_reg) {
-        boxes_reg.forEach(el => {
-          el.classList.add("compliment")
-        })
-      } */
-      //checkboxReg.checked = true
-
       controller.approveOn(boxes_apro, checkboxApr, lineParent)
-      /* if (boxes_apro) {
-        boxes_apro.forEach(el => {
-          el.classList.add("compliment")
-        })
-      }
-      lineParent.classList.add("reg") */
       
-    }
-    else {
+    } else {
       controller.approveOff(boxes_apro, checkboxApr, lineParent)
-      //done ?
-      /* checkboxApr.checked = false
-      lineParent.classList.remove("apr")
-
-      if (boxes_apro) {
-        boxes_apro.forEach(el => {
-          el.classList.remove("compliment")
-        })
-      } */
 
       document.querySelector("#apr_all_year_" + props.year).checked = false
     }
@@ -101,8 +55,8 @@ function Subject(props) {
         <div className='subject-line'>
           <div>{props.id}</div>
           <div>{props.name}</div>
-          <div><input type="checkbox" name="regular" id={"reg_check_" + props.id} className={"reg_check_year_" + props.year} onChange={()=> setLineRegular()} /></div>
-          <div><input type="checkbox" name="approve" id={"apr_check_" + props.id} className={"apr_check_year_" + props.year} onChange={()=> setLineApprove()} /></div>
+          <div><input type="checkbox" name="regular" id={"reg_check_" + props.id} data-algo={props.id} className={"reg_check_year_" + props.year} onChange={()=> setLineRegular()} /></div>
+          <div><input type="checkbox" name="approve" id={"apr_check_" + props.id} data-algo={props.id} className={"apr_check_year_" + props.year} onChange={()=> setLineApprove()} /></div>
           <div>{props.correlatives_course.length?
            <>
             {
@@ -130,8 +84,6 @@ function Subject(props) {
             }
            </> : 
            "No tiene"}</div>
-           {/* {console.log(`${props.id} ${props.name}`)}
-           {console.log(`Del array ${allSubjects[props.id - 1]}`)} */}
         </div>
       }
     </>

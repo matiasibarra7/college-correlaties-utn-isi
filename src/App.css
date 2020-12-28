@@ -23,6 +23,10 @@
   color: white;
 }
 
+.block-year {
+  max-width: 1530px;
+  margin: 0 auto
+}
 
 @keyframes App-logo-spin {
   from {

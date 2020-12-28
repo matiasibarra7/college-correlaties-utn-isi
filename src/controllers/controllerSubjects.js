@@ -8,8 +8,10 @@ const subjects = {
       })
     };
     lineParent.classList.add("reg");
+    // Si es activado por aprobado, setea el regular
     checkboxReg.checked = true
   },
+
   regularOff: (boxes_reg, checkboxReg, lineParent) => {
     lineParent.classList.remove("reg")
 
@@ -19,6 +21,7 @@ const subjects = {
       }
     )}
   },
+
   approveOn: (boxes_apro, checkboxApr, lineParent) => {
     if (boxes_apro) {
       boxes_apro.forEach(el => {
@@ -27,6 +30,7 @@ const subjects = {
     }
     lineParent.classList.add("apr")
   },
+  
   approveOff: (boxes_apro, checkboxApr, lineParent) => {
     checkboxApr.checked = false
     lineParent.classList.remove("apr")
@@ -36,6 +40,7 @@ const subjects = {
         el.classList.remove("compliment")
       })
     }
+    // Si se activa por quitar el regular, resetea el aprobado
     checkboxApr.checked = false
   }
 };
