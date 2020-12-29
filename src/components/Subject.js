@@ -61,7 +61,7 @@ function Subject(props) {
            <>
             {
               props.correlatives_course.map((el, i) => {
-                return <span key={`req_reg_span_${i}`} className={`requirement ${"reg_" + el}`} title={allSubjects[el - 1]}>{el}</span>
+                return <span key={`req_reg_span_${i}`} className={`requirement ${"reg_" + el}`} title={el ==="e8"? allSubjects[42] : allSubjects[el - 1]}>{el === 43? "e8" : el}</span>
               })
             }
            </> : 
@@ -70,6 +70,7 @@ function Subject(props) {
            <>
             {
               props.correlatives_course_apro.map((el, i) => {
+                /* console.log(el) */
                 return <span key={`req_apro_span_${i}`} className={`requirement ${"apr_" + el}`} title={allSubjects[el - 1]}>{el}</span>
               })
             }
@@ -79,7 +80,7 @@ function Subject(props) {
            <>
             {
               props.correlatives_exam.map((el, i) => {
-                return <span key={`req_corr_span_${i}`} className={`requirement ${"apr_" + el}`} title={allSubjects[el - 1]}>{el}</span>
+                return <span key={`req_corr_span_${i}`} className={`requirement ${"apr_" + el}`} title={el ==="e8"? allSubjects[42] : allSubjects[el - 1]}>{el === 43? "e8" : el}</span>
               })
             }
            </> : 
