@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/college-correlaties-utn-isi/static/css/main.2f151f26.chunk.css",
-    "main.js": "/college-correlaties-utn-isi/static/js/main.25dc53cf.chunk.js",
-    "main.js.map": "/college-correlaties-utn-isi/static/js/main.25dc53cf.chunk.js.map",
+    "main.css": "/college-correlaties-utn-isi/static/css/main.714267d5.chunk.css",
+    "main.js": "/college-correlaties-utn-isi/static/js/main.2239e9c8.chunk.js",
+    "main.js.map": "/college-correlaties-utn-isi/static/js/main.2239e9c8.chunk.js.map",
     "runtime-main.js": "/college-correlaties-utn-isi/static/js/runtime-main.3f1520c6.js",
     "runtime-main.js.map": "/college-correlaties-utn-isi/static/js/runtime-main.3f1520c6.js.map",
     "static/js/2.64f7405b.chunk.js": "/college-correlaties-utn-isi/static/js/2.64f7405b.chunk.js",
     "static/js/2.64f7405b.chunk.js.map": "/college-correlaties-utn-isi/static/js/2.64f7405b.chunk.js.map",
     "index.html": "/college-correlaties-utn-isi/index.html",
-    "static/css/main.2f151f26.chunk.css.map": "/college-correlaties-utn-isi/static/css/main.2f151f26.chunk.css.map",
+    "static/css/main.714267d5.chunk.css.map": "/college-correlaties-utn-isi/static/css/main.714267d5.chunk.css.map",
     "static/js/2.64f7405b.chunk.js.LICENSE.txt": "/college-correlaties-utn-isi/static/js/2.64f7405b.chunk.js.LICENSE.txt",
     "static/media/mati.c43e6b72.png": "/college-correlaties-utn-isi/static/media/mati.c43e6b72.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3f1520c6.js",
     "static/js/2.64f7405b.chunk.js",
-    "static/css/main.2f151f26.chunk.css",
-    "static/js/main.25dc53cf.chunk.js"
+    "static/css/main.714267d5.chunk.css",
+    "static/js/main.2239e9c8.chunk.js"
   ]
 }
