@@ -185,21 +185,24 @@
       "name": "Complejidad y Técnicas de Diseño de Algoritmos (3hs)",
       "correlatives_course": [14],
       "correlatives_course_apro": [5],
-      "correlatives_exam": [14]
+      "correlatives_exam": [14],
+      "elect_hs": 3
     },
     {
       "id": "e2",
       "name": "Planificación (3hs)",
       "correlatives_course": [12],
       "correlatives_course_apro": [4],
-      "correlatives_exam": [12]
+      "correlatives_exam": [12],
+      "elect_hs": 3
     },
     {
       "id": "e3",
       "name": "Base de Datos Aplicadas (4hs)",
       "correlatives_course": [21],
       "correlatives_course_apro": [],
-      "correlatives_exam": [21]
+      "correlatives_exam": [21],
+      "elect_hs": 4
     } 
   ]
 },
@@ -260,28 +263,32 @@
       "name": "Desarrollo de Aplicaciones Cliente-Servidor (4hs)",
       "correlatives_course": [18,21],
       "correlatives_course_apro": [12],
-      "correlatives_exam": [18,21]
+      "correlatives_exam": [18,21],
+      "elect_hs": 4
     },
     {
       "id": "e5",
       "name": "Sistemas de Información Geográficos (4hs)",
       "correlatives_course": [18,21],
       "correlatives_course_apro": [12],
-      "correlatives_exam": [18,21]
+      "correlatives_exam": [18,21],
+      "elect_hs": 4
     },
     {
       "id": "e6",
       "name": "Calidad del Producto y del Proceso de Software (4hs)",
       "correlatives_course": [18,21],
       "correlatives_course_apro": [12],
-      "correlatives_exam": [18,21]
+      "correlatives_exam": [18,21],
+      "elect_hs": 4
     },
     {
       "id": "e7",
       "name": "Técnicas de desarrollo Ágil de Software (4hs)",
       "correlatives_course": [18],
       "correlatives_course_apro": [12],
-      "correlatives_exam": [18]
+      "correlatives_exam": [18],
+      "elect_hs": 4
     }
   ]
 },
@@ -293,7 +300,7 @@
       "name": "Proyecto Final (Int)",
       "correlatives_course": [25,26,29,31],
       "correlatives_course_apro": [15,16,17,18,19,21,22,23,24],
-      "correlatives_exam": ["all"]
+      "correlatives_exam": ["all", "22hs_electivas"]
     },
     {
       "id": 33,
@@ -321,42 +328,48 @@
       "name": "Gestión de Seguridad de la información (4hs)",
       "correlatives_course": [26, 29, 25, 21],
       "correlatives_course_apro": [],
-      "correlatives_exam": [26, 29, 25, 21]
+      "correlatives_exam": [26, 29, 25, 21],
+      "elect_hs": 4
     },
     {
       "id": "e9",
       "name": "Sistema de Inteligencia de Negocios y Soporte de Decisiones (4hs)",
       "correlatives_course": [26, 29],
       "correlatives_course_apro": [],
-      "correlatives_exam": [26, 29]
+      "correlatives_exam": [26, 29],
+      "elect_hs": 4
     },
     {
       "id": "e10",
       "name": "Formación de Emprendedores (4hs)",
       "correlatives_course": [26],
       "correlatives_course_apro": [18],
-      "correlatives_exam": [26]
+      "correlatives_exam": [26],
+      "elect_hs": 4
     },
     {
       "id": "e11",
       "name": "Integración de Desarrollo y Operación de Software (DevOps) (4hs)",
       "correlatives_course": [26,25],
       "correlatives_course_apro": [],
-      "correlatives_exam": [26,25]
+      "correlatives_exam": [26,25],
+      "elect_hs": 4
     },
     {
       "id": "e12",
       "name": "Auditoría de Sistemas e Informática Forense (4hs)",
       "correlatives_course": [26],
       "correlatives_course_apro": [],
-      "correlatives_exam": [26]
+      "correlatives_exam": [26],
+      "elect_hs": 4
     },
     {
       "id": "e13",
       "name": "Fundamentos de la Ciberseguridad (4hs)",
       "correlatives_course": ["e8",29,25,21],
       "correlatives_course_apro": [],
-      "correlatives_exam": ["e8",29,25,21]
+      "correlatives_exam": ["e8",29,25,21],
+      "elect_hs": 4
     }
   ]
 }

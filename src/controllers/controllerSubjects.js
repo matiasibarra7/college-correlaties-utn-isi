@@ -43,6 +43,7 @@ const subjects = {
     // Si se activa por quitar el regular, resetea el aprobado
     checkboxApr.checked = false
   }
+  
 };
 
 module.exports = subjects;

@@ -1,6 +1,6 @@
 .subject-line {
   display: grid;
-  grid-template-columns: 5% 27% 9% 9% 15% 15% 20%;
+  grid-template-columns: 5% 27% minmax(9px,100px) minmax(9px,100px) 15% 1fr 20%;
   place-items: center;
   padding: 0.5rem 0;
   border: 1px solid black;

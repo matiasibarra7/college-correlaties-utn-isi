@@ -4,6 +4,24 @@ import controller from "../controllers/controllerSubjects"
 
 function Year(props) {
 
+  const thisYear = props.infoByYear
+  const subjectsOfThisYear = thisYear[props.id - 1].subjects
+
+  // Recibe las hs de la variable global luego de recibir la suma o resta y pinta o despinta el cuadro de electivas en proyecto final
+  function electCalc(hs) {
+    console.log(hs)
+    if (hs < 0) { props.hs.amount = 0}
+
+    const div22hs = document.querySelector(".apr_22hs_electivas")
+  
+    if (hs >= 22) { 
+      div22hs.classList.add("compliment")
+    } else {
+      div22hs.classList.remove("compliment")
+    }
+  }
+
+
   function approveAllByYear() {
     //Valor del check aprobado por año
     const value = document.querySelector("#apr_all_year_" + props.id).checked
@@ -22,14 +40,30 @@ function Year(props) {
       const lineParent = el.parentNode.parentNode
       const boxes_reg = document.querySelectorAll(".reg_" + el.dataset.algo)
       const boxes_apro = document.querySelectorAll(".apr_" + el.dataset.algo)
+      const thisSubject = subjectsOfThisYear[i]
+
       if (value) {
 
         controller.regularOn(boxes_reg, checksReg[i], lineParent)
 
         controller.approveOn(boxes_apro, el, lineParent)
 
+        // probando suma de horas
+        if (thisSubject.elect_hs) {
+          props.hs.amount += thisSubject.elect_hs
+          electCalc(props.hs.amount)
+        }
+        // probando suma de horas
+
       } else {
         controller.approveOff(boxes_apro, el, lineParent)
+
+        // probando resta de horas
+        if (thisSubject.elect_hs) {
+          props.hs.amount = props.hs.amount - thisSubject.elect_hs
+          electCalc(props.hs.amount)
+        }
+        // probando resta de horas
       }
     })
   }
@@ -51,6 +85,7 @@ function Year(props) {
       const lineParent = el.parentNode.parentNode
       const boxes_reg = document.querySelectorAll(".reg_" + el.dataset.algo)
       const boxes_apro = document.querySelectorAll(".apr_" + el.dataset.algo)
+      const thisSubject = subjectsOfThisYear[i]
 
       if (value) {
         controller.regularOn(boxes_reg, el, lineParent)
@@ -60,6 +95,12 @@ function Year(props) {
         
         controller.approveOff(boxes_apro, checksApr[i], lineParent)
 
+        // probando resta de horas
+        if (thisSubject.elect_hs) {
+          props.hs.amount = props.hs.amount - thisSubject.elect_hs
+          electCalc(props.hs.amount)
+        }
+        // probando resta de horas
       }
     })
   }
@@ -69,28 +110,31 @@ function Year(props) {
     {props.id > 1? <br/> : ""}
     <div className="block-year">
 
-      Año {props.id} 
+      <div style={{textAlign: "left", width: "95%", margin: "2rem auto 0"}}>Año {props.id}</div>
+       
 
       <div className="subject-line">
         <div></div>
         <div></div>
-        <div><input type="checkbox" id={"reg_all_year_" + props.id} onClick={()=> regularizateAllByYear()} /></div>
-        <div><input type="checkbox" id={"apr_all_year_" + props.id} onClick={()=> approveAllByYear()} /></div>
+        <div><input type="checkbox" id={"reg_all_year_" + props.id} onClick={()=> regularizateAllByYear()} title="Tildar todo el año"/></div>
+        <div><input type="checkbox" id={"apr_all_year_" + props.id} onClick={()=> approveAllByYear()} title="Tildar todo el año" /></div>
         <div></div>
         <div></div>
         <div></div>
       </div>
 
       {
-        props.infoByYear[props.id - 1].subjects.map(subject => {
+        thisYear[props.id - 1].subjects.map(subject => {
           return < Subject 
             key={"subject_" + subject.id} 
             name={subject.name} 
             id={subject.id} 
+            elect_hs={subject.elect_hs}
             correlatives_course={subject.correlatives_course} 
             correlatives_exam={subject.correlatives_exam} 
             correlatives_course_apro={subject.correlatives_course_apro}
-            year={props.id} /> 
+            year={props.id}
+            hs={props.hs} /> 
         })
       }
       

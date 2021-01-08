@@ -6,6 +6,10 @@ import data from "./data/data.json";
 
 function App() {
 
+  let hs = {
+    amount: 0
+  }
+
   const years = [
     {
       id: 1
@@ -49,7 +53,7 @@ function App() {
 
         {years.map( year => {
           /* console.log(data) */
-          return < Year id={year.id} key={"year_" + year.id} infoByYear={data} />
+          return < Year id={year.id} key={"year_" + year.id} infoByYear={data} hs={hs} />
         })}
       </main>
     </div>
