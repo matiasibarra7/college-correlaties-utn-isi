@@ -1,6 +1,7 @@
-import mati from './mati.png';
 import './App.css';
 import Year from './components/Year'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import data from "./data/data.json";
 
 
@@ -31,15 +32,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <figure style={{ position: 'absolute', top: "-0.5rem", right:"1.5rem"}}>
-          <img src={mati} className="App-logo" alt="logo" style={{ width:"120px", height: "123px", borderRadius: "50%" }} />
-        </figure>
-      </header>
+      <Header />
 
       <main>
         {/* Cabecera */}
-        <div style={{ maxWidth: "1530px", margin: "0 auto"}}>
+        <div style={{ maxWidth: "1530px", margin: "2rem auto 0"}}>
           <div className="subject-line">
             <div>ID</div>
             <div>Materia</div>
@@ -56,6 +53,8 @@ function App() {
           return < Year id={year.id} key={"year_" + year.id} infoByYear={data} hs={hs} />
         })}
       </main>
+      
+      <Footer />
     </div>
   );
 }

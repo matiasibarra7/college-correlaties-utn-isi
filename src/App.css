@@ -4,17 +4,17 @@
 
 .App-logo {
   pointer-events: none;
-}
+} 
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo.rotate{
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 150px;
+  background-color: #40798C;
+  min-height: 10.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -6,6 +6,10 @@
   border: 1px solid black;
 }
 
+.block-year .subject-line:nth-child(n + 3) {
+  border-top: none;
+}
+
 .subject-line.reg {
   background-color: lightblue;
 }
