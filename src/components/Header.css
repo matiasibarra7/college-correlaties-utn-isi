@@ -1,0 +1,26 @@
+.utn-info-container {
+  display: flex;
+  width: 25%;
+}
+
+.utn-info-container figure {
+  margin: auto 1rem;
+}
+
+.utn-info-container figure img {
+  width: 120px;
+  height: 123px;
+  border-radius: 50% 
+}
+
+.utn-head {
+  font-size: 1.1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.utn-head div {
+  margin: 2px auto;
+}
