@@ -36,7 +36,7 @@ function App() {
 
       <main>
         {/* Cabecera */}
-        <div style={{ maxWidth: "1530px", margin: "2rem auto 0"}}>
+        <div style={{ margin: "2rem auto 0"}}>
           <div className="subject-line">
             <div>ID</div>
             <div>Materia</div>

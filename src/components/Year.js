@@ -1,5 +1,6 @@
 import React from "react";
 import Subject from "./Subject"
+import "./Year.css";
 import controller from "../controllers/controllerSubjects"
 
 function Year(props) {
@@ -7,10 +8,29 @@ function Year(props) {
   const thisYear = props.infoByYear
   const subjectsOfThisYear = thisYear[props.id - 1].subjects
 
+  function printHeader(yearNumber) {
+    
+    switch (yearNumber) {
+      case 1:
+        return "Primer Año"
+      case 2:
+        return "Segundo Año"
+      case 3:
+        return "Tercer Año"
+      case 4:
+        return "Cuarto Año"
+      case 5:
+        return "Quinto Año"
+      default: 
+        return "Algo falló"
+    }
+
+  }
+
   // Recibe las hs de la variable global luego de recibir la suma o resta y pinta o despinta el cuadro de electivas en proyecto final
   function electCalc(hs) {
     console.log(hs)
-    if (hs < 0) { props.hs.amount = 0}
+    if (hs < 0) { props.hs.amount = 0 }
 
     const div22hs = document.querySelector(".apr_22hs_electivas")
   
@@ -107,10 +127,12 @@ function Year(props) {
 
   return (
     <>
-    {props.id > 1? <br/> : ""}
+    { props.id > 1? <br/> : "" }
     <div className="block-year">
 
-      <div style={{textAlign: "left", width: "95%", margin: "2rem auto 0"}}>Año {props.id}</div>
+      <div className="year-title">
+        { printHeader(props.id) }
+      </div>
        
 
       <div className="subject-line">
