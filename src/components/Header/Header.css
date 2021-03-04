@@ -1,0 +1,39 @@
+.App-header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 10.5rem;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: #40798C;
+}
+
+.utn-info-container {
+  display: flex;
+}
+
+.utn-head {
+  display: none;
+  font-size: 1.1rem;
+  text-align: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.utn-head div {
+  margin: 2px 0;
+}
+
+.App-header .center-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media(min-width: 1000px) {
+  .App-header {
+    grid-template-columns: 30% 40% 30%;
+  }
+  .utn-head {
+    display: flex;
+  }
+}

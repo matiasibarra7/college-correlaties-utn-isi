@@ -1,5 +1,11 @@
 .arania-container {
+  margin: auto 0;
+  min-width: 8rem;
+}
+
+.arania-container figure {
   margin: auto 1rem;
+  display: flex;
 }
 
 .arania-container img {

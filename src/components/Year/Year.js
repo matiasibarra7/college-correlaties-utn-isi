@@ -1,7 +1,7 @@
 import React from "react";
-import Subject from "./Subject"
+import Subject from "./Subject/Subject"
 import "./Year.css";
-import controller from "../controllers/controllerSubjects"
+import controller from "../../controllers/controllerSubjects"
 
 function Year(props) {
 

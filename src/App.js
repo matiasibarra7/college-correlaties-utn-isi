@@ -1,7 +1,7 @@
 import './App.css';
-import Year from './components/Year'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Year from './components/Year/Year'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import data from "./data/data.json";
 
 

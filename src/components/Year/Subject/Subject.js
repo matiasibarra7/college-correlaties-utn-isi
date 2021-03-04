@@ -1,7 +1,7 @@
 import React from "react";
 import "./Subject.css"
-import allSubjects from "../data/allSubjects.json";
-import controller from "../controllers/controllerSubjects"
+import allSubjects from "../../../data/allSubjects.json";
+import controller from "../../../controllers/controllerSubjects"
 
 
 function Subject(props) {
