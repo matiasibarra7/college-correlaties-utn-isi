@@ -12,7 +12,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #40798C;
   min-height: 10.5rem;
   display: flex;
@@ -20,7 +20,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .block-year {
   max-width: 1530px;
@@ -37,6 +37,7 @@
 }
 
 main {
-  margin: 0 2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
   max-width: 1530px;
 }

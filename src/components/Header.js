@@ -1,6 +1,8 @@
 import React from "react";
-import spider from '../utn-spider.jpg';
 import "./Header.css"
+import spider from '../utn-spider.jpg';
+// import "./HeaderNew.css"
+// import Arania from './Arania';
 
 function Header() {
   return (
@@ -25,6 +27,22 @@ function Header() {
         
       </div>
     </header>
+/*   <header className="App-header">
+    <div className="utn-info-container" style={{backgroundColor: "gray"}}>
+      <Arania />
+      <div className="utn-head">
+        <div>UNIVERSIDAD TECNOLÓGICA NACIONAL</div>
+        <div>FACULTAD REGIONAL RESISTENCIA</div>
+      </div>
+    </div>
+    <div style={{backgroundColor: "lightblue"}}>
+      <div>Simulador de situación académica</div>
+      <div>Ingeniería en Sistemas de Información</div>
+    </div>
+    <div style={{backgroundColor: "lightgreen"}}>
+
+    </div>
+  </header> */
 
   )
 }

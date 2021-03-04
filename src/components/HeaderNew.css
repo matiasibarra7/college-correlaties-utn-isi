@@ -1,0 +1,55 @@
+/* .utn-info-container {
+  display: flex;
+  width: 25%;
+}
+
+.utn-info-container figure {
+  margin: auto 1rem;
+}
+
+.utn-info-container figure img {
+  width: 120px;
+  height: 123px;
+  border-radius: 50% 
+}
+
+.utn-head {
+  font-size: 1.1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.utn-head div {
+  margin: 2px 0;
+} */
+
+/* .App-header {
+  background-color: #40798C;
+  min-height: 10.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-header {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  min-height: 10.5rem;
+  font-size: calc(10px + 2vmin);
+}
+
+.utn-info-container {
+  display: flex;
+}
+
+.utn-head {
+  font-size: 1.1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}

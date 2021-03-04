@@ -1,3 +1,13 @@
+.App-header {
+  background-color: #40798C;
+  min-height: 10.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .utn-info-container {
   display: flex;
   width: 25%;
@@ -22,5 +32,5 @@
 }
 
 .utn-head div {
-  margin: 2px auto;
+  margin: 2px 0;
 }
