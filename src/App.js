@@ -35,7 +35,7 @@ function App() {
       <Header />
 
       <main>
-        {/* Cabecera */}
+        {/* Cabecera 
         <div style={{ margin: "2rem auto 0"}}>
           <div className="subject-line">
             <div>ID</div>
@@ -46,7 +46,7 @@ function App() {
             <div>Apr para cursar</div>
             <div>Para rendir</div>
           </div>
-        </div>
+        </div> */}
 
         {years.map( year => {
           /* console.log(data) */

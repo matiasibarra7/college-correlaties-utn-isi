@@ -134,6 +134,18 @@ function Year(props) {
         { printHeader(props.id) }
       </div>
        
+      {/* Cabecera */}
+      <div >
+        <div className="subject-line">
+          <div>ID</div>
+          <div>Materia</div>
+          <div>Regular</div>
+          <div>Aprobado</div>
+          <div>Reg para cursar</div>
+          <div>Apr para cursar</div>
+          <div>Para rendir</div>
+        </div>
+      </div>
 
       <div className="subject-line">
         <div></div>
